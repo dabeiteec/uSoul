@@ -6,6 +6,9 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+.hide{
+    overflow: scroll;
+}
 .background{
     height: 100vh;
 }
@@ -37,7 +40,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 .right_container{
     margin-top: 2%;
@@ -79,9 +81,12 @@ h1{
     width: 128px;
     height: 128px;
 }
+.button_location{
+    position: relative;
+    left:90px;
+    top:40px;
+}
 .button{
-    margin-left:150px;
-    margin-top:50px;
     cursor: pointer;
     width: 285px;
     height: 80px;
@@ -99,10 +104,6 @@ h1{
     line-height: 49px;
     font-weight: 300;
 }
-/* .button:hover{
-    filter: drop-shadow(0 0 0.5 white) solid;
-    transition: all 1s ease-out;
-} */
 .img{
     width: 1600px;
     height: 950px;
@@ -228,18 +229,67 @@ h1{
     font-family:"Montserrat",sans-serif ;
     color: white;
     font-size: 20px;
-
+    position: relative;
+    top:40px;
+    left: 480px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
 }
 .checked{
-    top:30px;
+    border-bottom:2px#D9D9D9 transparent;
+    cursor: pointer;
 }
-.film_conteiner{
-    background-color: #0A0A0A;
-    height: 300px;
+.checked{
+    border-bottom: 2px white solid;
 }
-.series_container{
-    background-color: #0A0A0A;
+.planed{
+    position: relative;
+    left: 480px;
+    border-bottom:2px#D9D9D9 transparent;
+    cursor: pointer;
+}
+.planed:hover{
+    border-bottom: 2px white solid;
+}
+.left{
+    position: relative;
+    visibility: hidden;
+}
+.planed:hover~ .left{
+    visibility: visible;
+}
+.main_container{
+    position: relative;
+    top: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 340px 340px;
+}
+.margin_div{
+    position: relative;
+    left: 100px;
+}
+.container{
+    border:white 1px solid;
+    border-radius: 30px;
     min-height: 220px;
     height: 300px;
+    width: 830px;
+}
+.loc_button{
+    
+}
+#film_container{
+    
+}
+#series_container{
+
+}
+#anime_container{
+    
+}
+#games_container{
+
 }
 

@@ -11,11 +11,5 @@ window.onload = () => {
         child.addEventListener("click", () => glowElement(child));
     }
     slidingUserWindow();
-    moscow();
 };
-function moscow(){
-    alert("ok")
-    let time=fetch("http://worldtimeapi.org/api/timezone/Europe/Moscow")
-    console.log(time);
-}
 

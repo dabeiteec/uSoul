@@ -1,6 +1,6 @@
-window.onload = () => {
+
     slidingUserWindow();
-    }    
+    
     function slidingUserWindow(){
         let userIcon = document.querySelector('#pivo');
         let userPopup = document.querySelector('#user_window'); 
@@ -9,6 +9,4 @@ window.onload = () => {
         userIcon.addEventListener('click', () => 
             userPopup.classList.remove('hidden')
         );
-    } 
-    alert("sex and pivo");
-    
+    }
