@@ -9,4 +9,6 @@ window.onload = () => {
         userIcon.addEventListener('click', () => 
             userPopup.classList.remove('hidden')
         );
-    }
+    } 
+    alert("sex and pivo");
+    
