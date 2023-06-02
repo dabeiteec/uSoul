@@ -1,122 +1,119 @@
 body {
-    background-color:black;
-    background-size: cover;
-    margin:0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  background-size: cover;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.hide{
-    overflow: scroll;
-    overflow-x:hidden;
+.hide {
+  overflow: scroll;
+  overflow-x: hidden;
 }
-.up_text{
-    color: white;
-    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+.up_text {
+  color: white;
+  filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
 }
 
 /*.background{*/
 /*    height: 100vh;*/
 /*}*/
 
-
-
-.hidden{
-    display: none !important;
+.hidden {
+  display: none !important;
 }
 
+.for_project {
+  position: absolute;
+  /* transform: scale(0); */
+  background-color: #0a0a0a;
+  color: white;
+  opacity: 0;
+  border-radius: 20px;
+  border: 1px transparent solid;
+  transition: 0.3s;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  top: 800px;
+  left: 30px;
+  right: 1000px;
+  /* max-width: 682; */
+}
+.my_products {
+  position: absolute;
+  display: none;
+  background-color: #0a0a0a;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.9;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  max-width: 800px;
+  top: 820px;
+  right: 100px;
+}
+.checked {
+  cursor: pointer;
+  border-bottom: 2px white solid;
+}
 
-.for_project{
-    position: absolute;
-    /* transform: scale(0); */
-    background-color: #0A0A0A;
-    color:white;
-    opacity: 0;
-    border-radius: 20px;
-    border:1px transparent solid;
-    transition: 0.3s;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    top:800px;
-    left: 30px;
-    right: 1000px;
-    /* max-width: 682; */
-}
-.my_products{
-    position: absolute;
-    display: none;
-    background-color: #0A0A0A;
-    color:white;
-    font-family:"Montserrat",sans-serif ;
-    opacity: 0.9;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    max-width: 800px;
-    top: 820px;
-    right: 100px;
-}
-.checked{
-    cursor: pointer;
-    border-bottom: 2px white solid;
-}
-
-.button{
-    cursor: pointer;
-    width: 285px;
-    height: 80px;
-    background: linear-gradient(#1d4eaa,#a62ad0);
-    /* filter: drop-shadow(0 0 0.5 white) transparent;
+.button {
+  cursor: pointer;
+  width: 285px;
+  height: 80px;
+  background: linear-gradient(#1d4eaa, #a62ad0);
+  /* filter: drop-shadow(0 0 0.5 white) transparent;
     transition: all .55s ease; */
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #D9D9D9;
-    font-style: italic;
-    font-size: 32px;
-    line-height: 49px;
-    font-weight: 300;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d9d9d9;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 49px;
+  font-weight: 300;
 }
-.sliding_text2{
-    display: block;
-    border-bottom: 2px transparent solid;
-    transition: all .55s ease;
-    height: 50px;
-    cursor: default;
+.sliding_text2 {
+  display: block;
+  border-bottom: 2px transparent solid;
+  transition: all 0.55s ease;
+  height: 50px;
+  cursor: default;
 }
-.sliding_text2:hover+.my_products{
-    display: block;
+.sliding_text2:hover + .my_products {
+  display: block;
 }
-.sliding_text2:hover{
-    border-bottom:  2px white solid;
-    height: 50px;
+.sliding_text2:hover {
+  border-bottom: 2px white solid;
+  height: 50px;
 }
-.sliding_text:hover~.for_project {
-    /* transform: scale(1); */
-    opacity: 1;
-    transition: 0.5s;
+.sliding_text:hover ~ .for_project {
+  /* transform: scale(1); */
+  opacity: 1;
+  transition: 0.5s;
 }
-.sliding_text{
-    display:block;
-    border-bottom: 2px transparent solid;
-    transition: 0.2s;
-    height: 50px;
-    cursor:default;
+.sliding_text {
+  display: block;
+  border-bottom: 2px transparent solid;
+  transition: 0.2s;
+  height: 50px;
+  cursor: default;
 }
-.sliding_text:hover{
-    border-bottom:  2px white solid;
-    height: 50px;
+.sliding_text:hover {
+  border-bottom: 2px white solid;
+  height: 50px;
 }
 
-.transparent-button{
-    background-color: transparent;
-    border: transparent;
-    padding: 0;
+.transparent-button {
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
 }

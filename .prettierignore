@@ -1,4 +1,5 @@
 # Ignore artifacts:
-dist/
+dist
 .eslintrc.json
 .prettierrc.json
+.parcel-cache
