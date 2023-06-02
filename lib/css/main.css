@@ -1,0 +1,78 @@
+.planed{
+    position: relative;
+    left: 480px;
+    border-bottom:2px transparent solid;
+    transition: 0.2s;
+    cursor: pointer;
+    /* opacity: 0; */
+}
+.planed:hover{
+    /* opacity: 1;
+    transition: 1s;  */
+    border-bottom: 2px white solid;
+    filter: drop-shadow(0 0 0.75rem white);
+}
+.left_img{
+    position: relative;
+    opacity: 0;
+    z-index: 1;
+    left: 500px;
+    top: 2px;
+}
+.planed:hover~ .left_img{
+    opacity: 1;
+    transition: 0.2s;
+}
+.main_container{
+    position: relative;
+    top: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 340px 340px;
+}
+.margin_div{
+    position: relative;
+    left: 100px;
+}
+.container{
+    border:white 1px solid;
+    border-radius: 30px;
+    min-height: 220px;
+    height: 300px;
+    width: 830px;
+}
+.loc_button{
+    position: relative;
+    top: 210px;
+    left: 10px;
+}
+#film_container{
+
+}
+#series_container{
+
+}
+#anime_container{
+
+}
+#games_container{
+
+}
+.div_text{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    min-width: 350px;
+    bottom: 140px;
+}
+
+.upper_case{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top:40px;
+    left: 480px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
