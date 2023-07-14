@@ -19,22 +19,18 @@
   </head>
   <body class="hide">
     <div class="header">
-      <img src="../../assets/logo.png" alt="logo"/>
-      <span class="up_text sliding_text"> О проекте </span>
-      <div class="up_text for_project">
-        UniversalSaver- проект, который изначально подразумевался, как учебная практика, однако с течением времени
-        перерос в полноценную идею. Здесь вы можете сохранить просмотренные, запланированные вами фильмы, сериалы и тд.
-      </div>
-      <span class="up_text sliding_text2"> Наши продукты </span>
-      <div class="up_text my_products">
-        В число наших продуктов входят: Телеграм Бот, Веб-сайт, Мобильное приложение, а так же Десктопное приложение на
-        паш ПК. Оценить их дизаин вы можете на кнопочках снизу.
-      </div>
-      <div class="upper_container">
+      <img src="../../assets/logo.png" alt="logo" class="logo"/>
+      
+        <a href="index.html" class="up_text header_font upper_links">Начальная страница</a>
+      <span class="up_text header_font">
+        Случайный контент
+      </span>
+      <a href="about.html" class="up_text header_font upper_links">О нас</a>
+      <div class="user_icon">
         <span class="up_text">
-          <img src="../../assets/user.svg" id="pivo" alt="user"/>
+          <img src="../../assets/user.svg" id="profile" alt="user"/>
         </span>
-        <div id="user_window" class="hidden">
+        <div id="user_window" class="profile_popup hidden">
           <span class="popup_text"> Мой профиль </span>
           <span class="popup_text"> Подписка </span>
           <span class="popup_text"> Вход </span>
@@ -42,40 +38,48 @@
         </div>
       </div>
     </div>
-    <div class="upper_case">
-      <span class="checked"> просмотренные </span>
-      <span class="planed"> запланированные </span>
-      <img src="../../assets/left.png" class="left_img" alt="left_img"/>
+    <div class="subtitle">
+      <img src="../../assets/subtitle.jpg" class="subtitle_img" alt="subtitle"/>
     </div>
     <div class="main_container">
-      <div class="container margin_div" id="film_container">
-        <div class="button loc_button">
-          <span> Фильмы </span>
-          <!-- <span class="div_text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse unde illum vel animi quam eum distinctio architecto non excepturi.
-                    </span> -->
+      <div class="left_container">
+        <img src="../../assets/burger.svg" class="burger_hidden" id="burger">
+        <!-- <div id="burger_event" class="hidden_list"> -->
+        <div class="hidden_list burger_event location_centre">
+          <div class="checked_skip navigate_padding ">
+            <span class="checked "> просмотренные </span>
+          <img src="../../assets/left.png" class="left_img" alt="left_img"/>
+          </div>
+          <div class="planed_skip navigate_padding ">
+            <span class="planed"> запланированные </span>
+          <img src="../../assets/left.png" class="left_img" alt="left_img"/>
+          </div>
+          <div class="process_skip navigate_padding t">
+            <span class="in_process"> в процессе </span>
+            <img src="../../assets/left.png" class="left_img" alt="left_img"/>
+          </div>
         </div>
       </div>
-      <div class="container" id="series_container">
-        <div class="button loc_button">
-          <span> Сериалы </span>
+    <div class="mid_container">
+      <marquee direction="left" class="ticker"> Сохрани увиденное! Найди желанное! Загляни в прошлое!Сохрани воспоминания!Смотри вместе
+        с друзьями!Планируй!
+      </marquee>
+      <div class="test_film">
+        <img src="../../assets/test.jpg" width="570" height="359">
+        <div class="film_case">
+          <div class="film_text">
+            Все просмотренные фильмы,вы можете сохранить тут! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi provident et quia laborum eaque maxime quisquam molestiae? Recusandae, optio. Distinctio similique deleniti atque labore sed dignissimos eveniet suscipit consequuntur ipsam!
+          </div>
+          <button class="button">
+            Сохранить
+          </button>
         </div>
+        
       </div>
-      <div class="container margin_div" id="anime_container">
-        <div class="button loc_button">
-          <span> Аниме </span>
-        </div>
-      </div>
-      <div class="container" id="games_container">
-        <div class="button loc_button">
-          <span class="button_text"> Игры </span>
-        </div>
-      </div>
-      <div class="custom_save">
-        <div class="button">
-          <span> Перейти </span>
-        </div>
-      </div>
+      
+    </div>
+    <div class="right_container">
+
     </div>
   </body>
 </html>
