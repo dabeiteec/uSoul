@@ -1,18 +1,13 @@
 body {
-  /* background-color: #050505; */
-  /* background-color: #101010; */
-  /* background-color: #080808; */
   background-color: black;
   background-size: cover;
   margin: 0;
   width: 100%;
   height: 100%;
-  /* min-height: 100%; */
   font-family: 'Montserrat', sans-serif;
 }
 html{
   height:2900px; 
-  /* height: 100%; */
   width: 100%;
 }
 ::-webkit-scrollbar{
@@ -37,7 +32,6 @@ html{
   width: 100%;
   height: 250px;
   filter: blur(5px);
-  
 }
 .choice_color{
   display: flex;
@@ -91,7 +85,6 @@ border: 2px solid white;
   width: 50px ;
   height: 50px;
   margin-right: 25px; 
-  /* position: fixed; */
 }
 .centre{
   display: flex;
@@ -135,13 +128,11 @@ border: 2px solid white;
   position: relative;
   opacity: 0;
   z-index: 1;
-  /*  left: 500px; */
   top: 8px; 
 }
 .planed:hover ~ .left_img {
   opacity: 1;
-  transition: 0.2s;
-  
+  transition: 0.2s; 
 }
 .checked:hover ~ .left_img {
   opacity: 1;
@@ -163,14 +154,6 @@ border: 2px solid white;
   top: 210px;
   left: 10px;
 }
-/* #film_container {
-}
-#series_container {
-}
-#anime_container {
-}
-#games_container {
-} */
 .div_text {
   color: white;
   font-size: 20px;
@@ -200,12 +183,6 @@ border: 2px solid white;
 .content_block{
   display: flex;
   margin-top: 100px;
-  /* background-image:url("../../assets/Rectangle\ 9.png") ;
-  border-radius: 30px;
-  width: 773px;
-  height: 360px;
-  opacity: 0.5; */
-  /* filter: blur(5px); */
 }
 .film{
   display: flex;
@@ -268,9 +245,6 @@ label {
   background: rgba(40, 40, 40,0.2);
 }
 input{
-  /* max-width: 1000px;
-  min-width: 300px;
-  width:850px; */
   height: 60px;
   justify-content: center;
   align-items: center;
@@ -279,11 +253,9 @@ input{
   background: rgba(40, 40, 40,0.2);
   color: aliceblue;
   border-radius: 20px;
-  /* margin-bottom: 5px; */
   position: relative;
   left: 20px;
   bottom:5px
-  
 }
 select{
   width:170px ;
