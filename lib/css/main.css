@@ -1,38 +1,148 @@
-.planed {
-  position: relative;
-  left: 480px;
-  border-bottom: 2px transparent solid;
-  transition: 0.2s;
-  cursor: pointer;
-  /* opacity: 0; */
+html{
+  height:2900px; 
+  width: 100%;
 }
-.planed:hover {
-  /* opacity: 1;
-    transition: 1s;  */
-  border-bottom: 2px white solid;
-  filter: drop-shadow(0 0 0.75rem white);
+::-webkit-scrollbar{
+  width: 15px;
 }
-.left_img {
-  position: relative;
-  opacity: 0;
+::-webkit-scrollbar-track{
+  background: black;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: 5px solid black;
+}
+.header{
+  position:fixed;
+  top: 0px;
+  width: 100%;
   z-index: 1;
-  left: 500px;
-  top: 2px;
 }
-.planed:hover ~ .left_img {
-  opacity: 1;
-  transition: 0.2s;
+.subtitle_img{
+  margin-top: 150px;
+  width: 100%;
+  height: 250px;
+  filter: blur(5px);
+}
+.choice_color{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top:30px ;
+  height: 200px;
+  width: 50;
+  /* border: 2px solid white;
+  border-radius: 20px; */
+}
+.right_container{
+  position: fixed;
+  left: 90%;
+  bottom: 25%;
+}
+.color_button{
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  border: #101010;
+}
+.border_choice_color_button{
+border: 2px solid white;
+}
+.choice_pink_color_button{
+  background-color: #a62ad0;
+  filter: drop-shadow(0 0 0.75rem #a62ad0);
+}
+.choice_blue_color_button{
+  background-color: #2b5fcf;
+  filter: drop-shadow(0 0 0.75rem #2b5fcf);
 }
 .main_container {
   position: relative;
   top: 180px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.6fr 1.8fr 0.6fr;
   grid-template-rows: 340px 340px;
 }
-.margin_div {
+.left_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+  height: 100%;
+  left: 0;
+  color: rgb(255, 255, 255);
+  width: 300px;
+}
+.mid_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger{
+  width: 50px ;
+  height: 50px;
+  margin-right: 25px; 
+}
+.centre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin-bottom: 170px;
+  padding: 10px;
+}
+.checked {
   position: relative;
-  left: 100px;
+  cursor: pointer;
+  border-bottom: 2px white solid;
+  border-bottom-color: rgb(255, 255, 255);
+}
+.checked:hover {
+  border-bottom: 2px white solid;
+  filter: drop-shadow(0 0 0.75rem white);
+  border-bottom-color: rgb(255, 255, 255);
+}
+.planed {
+  position: relative;
+  border-bottom: 2px transparent solid;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.planed:hover {
+  border-bottom: 2px white solid;
+  filter: drop-shadow(0 0 0.75rem white);
+}
+.process {
+  position: relative;
+  border-bottom: 2px transparent solid;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.process:hover {
+  border-bottom: 2px white solid;
+  filter: drop-shadow(0 0 0.75rem white);
+}
+.right_arrow {
+  position: relative;
+  opacity: 0;
+  z-index: 1;
+  top: 8px; 
+}
+.planed:hover ~ .right_arrow {
+  opacity: 1;
+  transition: 0.2s; 
+}
+.checked:hover ~ .left_i.right_arrow {
+  opacity: 1;
+  transition: 0.2s;
+}
+.process:hover ~ .right_arrow {
+  opacity: 1;
+  transition: 0.2s;
 }
 .container {
   border: white 1px solid;
@@ -46,14 +156,6 @@
   top: 210px;
   left: 10px;
 }
-#film_container {
-}
-#series_container {
-}
-#anime_container {
-}
-#games_container {
-}
 .div_text {
   color: white;
   font-size: 20px;
@@ -61,7 +163,15 @@
   min-width: 350px;
   bottom: 140px;
 }
-
+#profile{
+  margin-right: 140px;
+}
+.words_centre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .upper_case {
   color: white;
   font-size: 20px;
@@ -71,4 +181,118 @@
   width: 300px;
   display: flex;
   justify-content: center;
+}
+.content_block{
+  display: flex;
+  margin-top: 100px;
+}
+.film{
+  display: flex;
+}
+.img_series{
+  width: 450px;
+  height: 350px;
+  border-radius: 30px;
+}
+.content_text{
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+  padding: 5px;
+}
+.search_text{
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+  padding: 5px;
+}
+.content_case{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal_window{
+  background-color: #101010;  ;
+  opacity: 0.99;
+  position:  fixed;
+  z-index: 999;
+  width: 1100px;
+  height: 700px;
+  border-radius: 30px;
+  filter: drop-shadow(0 0 0.75rem rgb(228, 85, 233));
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  top:130px;
+}
+.search{
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: block;
+  font:
+    1rem 'Fira Sans',
+    sans-serif;
+}
+.button_search{
+  display: flex;
+}
+.margin_search {
+  margin: 0.4rem 0;
+}
+.search_bar{
+  max-width: 100%s;
+  min-width: 300px;
+  width:850px;
+  background: rgba(40, 40, 40,0.2);
+}
+input{
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 5px;
+  background: rgba(40, 40, 40,0.2);
+  color: aliceblue;
+  border-radius: 20px;
+  position: relative;
+  left: 20px;
+  bottom:5px
+}
+select{
+  width:170px ;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 5px;
+  background-color: rgb(40, 40, 40);
+  color: aliceblue;
+  border-radius: 20px;
+}
+.search_button{
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.sliding_list_text{
+  font-size: 18px;
+}
+.close_button {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(171, 169, 169);
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  padding: 3px;
+  border: none;
+}
+.button_window{
+  background: linear-gradient(#2b5fcf, #a62ad0);
+  border-radius: 30px;
+  width: 160px;
+  height: 60px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 0.75rem rgb(194, 85, 233));
+  border: #101010;
 }

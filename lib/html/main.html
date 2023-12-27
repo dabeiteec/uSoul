@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Universal Saver</title>
+    <title>Soul</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,11 +21,11 @@
     <div class="header">
       <img src="../../assets/logo.png" alt="logo" class="logo"/>
       
-        <a href="index.html" class="up_text header_font upper_links hover">Начальная страница</a>
+        <a href="index.html" class="up_text header_font links hover">Начальная страница</a>
       <span class="up_text header_font hover">
         Случайный контент
       </span>
-      <a href="about.html" class="up_text header_font upper_links hover">О нас</a>
+      <a href="about.html" class="up_text header_font links hover">О нас</a>
       <div class="user_icon">
         <span class="up_text">
           <img src="../../assets/user.svg" id="profile" alt="user"/>
@@ -43,80 +43,174 @@
     </div>
     <div class="main_container">
       <div class="left_container">
-        <img src="../../assets/burger.svg" class="burger_hidden" id="burger">
-        <!-- <div id="burger_event" class="hidden_list"> -->
-        <div class="hidden_list burger_event location_centre">
-          <div class="checked_skip navigate_padding">
+        <div class="centre">
+          <img src="../../assets/burger.svg" class="burger_hidden burger">
+          <div class="checked_skip ">
             <span class="checked " > просмотренные </span>
-          <img src="../../assets/left.png" class="left_img" alt="left_img"/>
+          <img src="../../assets/right_arrow.png" class="right_arrow" alt="right_arrow"/>
           </div>
-          <div class="planed_skip navigate_padding  hover" id="on_hover">
+          <div class="planed_skip " id="on_hover">
             <span class="planed hover" id="on_hover"> запланированные </span>
-          <img src="../../assets/left.png" class="left_img" alt="left_img"/>
+            <img src="../../assets/right_arrow.png" class="right_arrow" alt="right_arrow"/>
           </div>
-          <div class="process_skip navigate_padding t">
-            <span class="in_process hover" id="on_hover"> в процессе </span>
-            <img src="../../assets/left.png" class="left_img" alt="left_img"/>
-          </div>
+          <div class="process_skip ">
+            <span class="process hover" id="on_hover"> в процессе </span>
+            <img src="../../assets/right_arrow.png" class="right_arrow" alt="right_arrow"/>
+          </div> 
         </div>
       </div>
-    <div class="mid_container">
-      <div class="colomn">
-        <marquee direction="left" class="ticker"> Сохрани увиденное! Найди желанное! Загляни в прошлое!Сохрани воспоминания!Смотри вместе
-          с друзьями!Планируй!
-        </marquee>
-        <div class="test_film">
-          <img src="../../assets/film.jpg" class="img_film">
-          <div class="film_case">
-            <h1 class="film_text">
-              Все просмотренные фильмы,вы можете сохранить и найти тут! 
+      <!--  -->
+      <!--  -->
+      <div class="mid_container">
+        <div class="colomn">
+          <div class="film">
+            <img src="../../assets/blue_film.png" class = "img_series blue_img">
+            <img src="../../assets/pink_film.png" class="img_series pink_img">
+            <div class="content_case">
+              <h1 class="content_text">
+                Все просмотренные фильмы,вы можете сохранить и найти тут! 
+              </h1>
+              <button class="button case_button " id="button_film">
+                Сохранить
+              </button>
+              
+            </div>
+          </div>
+            <div class="modal_window hidden" id="window_film">
+              <div class="search">
+                <label for="site-search" class="search_text margin_search">Сохранить можно тут!</label>
+                <div class="button_search">
+                  <button class="button_window">Добавить</button>
+                  <input type="search" class='margin_search' id="site-search"  />
+                  <!-- <button class="search_icon"> -->
+                    <img class="search_button"src="../../assets/search.png">
+                  <!-- </button> -->
+                </div>
+              </div>
+              <button class="close_button"></button>
+              
+            </div>
+        <!-- //////////////////////// -->
+        <div class="content_block">
+          <img src="../../assets/blue_series.png" class="img_series blue_img" >
+          <img src="../../assets/pink_series.png" class="img_series pink_img" >
+            <div class="content_case">
+              <h1 class="content_text">
+                Посмотрели сериал? Сохраните или найдите его тут! 
+              </h1>
+              <button class="button case_button" id="button_series">
+                Сохранить
+              </button>
+            </div>
+        </div>
+        <div class="modal_window hidden" id="window_series">
+          <div class="search">
+            <label for="site-search" class="search_text margin_search">Сохранить можно тут!</label>
+            <div class="button_search">
+              <button class="button_window">
+                Добавить
+              </button>
+              <div class="search_bar">
+                <input type="text" placeholder="search" color="white"class='margin_search' id="site-search"  />
+              </div>
+              <button class="search_button">
+                <img class="search_button"src="../../assets/search.png">
+              </button>
+            </div>
+          </div>
+          <div class="close_button"></div>
+          
+        </div>
+        <!-- //////////////////////// -->
+        <div class="content_block">
+          <img src="../../assets/blue_anime.png" class="img_series blue_img">
+          <img src="../../assets/pink_anime.png" class="img_series pink_img">
+          <div class="content_case">
+            <h1 class="content_text">
+              Любители посмотреть аниме, сохраняйте просмотренное и ищите его здесь! 
             </h1>
-            <button class="button case_button">
+            <button class="button case_button" id="button_anime">
               Сохранить
             </button>
           </div>
         </div>
+        <div class="modal_window hidden" id="window_anime">
+          <div class="search">
+            <label for="site-search" class="search_text margin_search">Сохранить можно тут!</label>
+            <div class="button_search">
+              <button class="button_window">Добавить</button>
+              <input type="search" class='margin_search' id="site-search"  />
+              <!-- <button class="search_icon"> -->
+                <img class="search_button"src="../../assets/search.png">
+              <!-- </button> -->
+            </div>
+          </div>
+          <div class="close_button"></div>
+          
+        </div>
         <!-- //////////////////////// -->
-        <div class="test_film">
-          <img src="../../assets/test.jpg" class="img_series">
-          <div class="film_case">
-            <h1 class="film_text">
+        <div class="content_block">
+          <img src="../../assets/blue_mult.png" class="img_series blue_img">
+          <img src="../../assets/pink_mult.png" class="img_series pink_img">
+          <div class="content_case">
+            <h1 class="content_text">
+              Любители посмотреть аниме, сохраняйте просмотренное и ищите его здесь!
+            </h1>
+            <button class="button case_button" id="button_cartoon">
+              Сохранить
+            </button>
+          </div>
+        </div>
+        <div class="modal_window hidden" id="window_cartoon">
+          <div class="search">
+            <label for="site-search" class="search_text margin_search">Сохранить можно тут!</label>
+            <div class="button_search">
+              <button class="button_window">Добавить</button>
+              <input type="search" class='margin_search' id="site-search"  />
+              <!-- <button class="search_icon"> -->
+                <img class="search_button"src="../../assets/search.png">
+              <!-- </button> -->
+            </div>
+          </div>
+          <div class="close_button"></div>
+          
+        </div>
+        <!-- //////////////////////// -->
+        <div class="content_block">
+          <img src="../../assets/blue_game.png" class="img_series blue_img">
+          <img src="../../assets/pink_game.png" class="img_series pink_img">
+          <div class="content_case">
+            <h1 class="content_text">
               Посмотрели сериал? Сохраните или найдите его тут! 
             </h1>
-            <button class="button case_button">
+            <button class="button case_button" id="button_game">
               Сохранить
             </button>
           </div>
         </div>
-        <!-- //////////////////////// -->
-        <div class="test_film">
-          <img src="../../assets/anime.jpg" class="img_series">
-          <div class="film_case">
-            <h1 class="film_text">
-              Любители посмотреть аниме,сохраняйте просмотренное и ищите его здесь! 
-            </h1>
-            <button class="button case_button">
-              Сохранить
-            </button>
+        <div class="modal_window hidden" id="window_game">
+          <div class="search">
+            <label for="site-search" class="search_text margin_search">Сохранить можно тут!</label>
+            <div class="button_search">
+              <button class="button_window">Добавить</button>
+              <input type="search" class='margin_search' id="site-search"  />
+              <!-- <button class="search_icon"> -->
+                <img class="search_button"src="../../assets/search.png">
+              <!-- </button> -->
+            </div>
           </div>
+          <div class="close_button"></div>
         </div>
-        <!-- //////////////////////// -->
-        <div class="test_film">
-          <img src="../../assets/game.png" class="img_series">
-          <div class="film_case">
-            <h1 class="film_text">
-              Прошли игру сохраняйте и ищите её здесь! 
-            </h1>
-            <button class="button case_button">
-              Сохранить
-            </button>
-          </div>
-        </div>
-        
       </div>
     </div>
     <div class="right_container">
-
+      <div class="choice_color">
+        <!-- <button class="button_color color_pink button_pink_img" id="border_pink_button border_onklick_blue_button"></button> -->
+        <button class="color_button choice_pink_color_button button_pink_img" id=""></button>
+        <span class="content_text">КЛИК!</span>
+        <!-- <button class="button_color color_blue button_blue_img" id="border_blur_button"></button> -->
+        <button class="color_button choice_blue_color_button button_blue_img" id=""></button>
+      </div>
     </div>
   </body>
 </html>

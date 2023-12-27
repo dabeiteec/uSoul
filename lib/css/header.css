@@ -13,11 +13,9 @@
 
   margin-right: 100px;
 }
-
 .profile_popup {
   font-weight: bold;
   color: white;
-
   top: 100px;
   right: 50px;
   position: absolute;
@@ -31,7 +29,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 .popup_text {
   font-size: 25px;
   margin-top: 10px;
