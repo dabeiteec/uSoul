@@ -27,12 +27,21 @@ html{
 }
 .choice_color{
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-top:30px ;
-  height: 50px;
+  height: 200px;
+  width: 50;
+  /* border: 2px solid white;
+  border-radius: 20px; */
 }
-.button_color{
+.right_container{
+  position: fixed;
+  left: 90%;
+  bottom: 25%;
+}
+.color_button{
   height: 30px;
   width: 30px;
   border-radius: 100px;
@@ -41,11 +50,11 @@ html{
 .border_choice_color_button{
 border: 2px solid white;
 }
-.color_pink{
+.choice_pink_color_button{
   background-color: #a62ad0;
   filter: drop-shadow(0 0 0.75rem #a62ad0);
 }
-.color_blue{
+.choice_blue_color_button{
   background-color: #2b5fcf;
   filter: drop-shadow(0 0 0.75rem #2b5fcf);
 }
@@ -62,9 +71,8 @@ border: 2px solid white;
   justify-content: center;
   margin-left: 30px;
   height: 100%;
-  position: sticky;
   left: 0;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   width: 300px;
 }
 .mid_container{
@@ -91,10 +99,12 @@ border: 2px solid white;
   position: relative;
   cursor: pointer;
   border-bottom: 2px white solid;
+  border-bottom-color: rgb(255, 255, 255);
 }
 .checked:hover {
   border-bottom: 2px white solid;
   filter: drop-shadow(0 0 0.75rem white);
+  border-bottom-color: rgb(255, 255, 255);
 }
 .planed {
   position: relative;
@@ -116,21 +126,21 @@ border: 2px solid white;
   border-bottom: 2px white solid;
   filter: drop-shadow(0 0 0.75rem white);
 }
-.left_img {
+.right_arrow {
   position: relative;
   opacity: 0;
   z-index: 1;
   top: 8px; 
 }
-.planed:hover ~ .left_img {
+.planed:hover ~ .right_arrow {
   opacity: 1;
   transition: 0.2s; 
 }
-.checked:hover ~ .left_img {
+.checked:hover ~ .left_i.right_arrow {
   opacity: 1;
   transition: 0.2s;
 }
-.process:hover ~ .left_img {
+.process:hover ~ .right_arrow {
   opacity: 1;
   transition: 0.2s;
 }
@@ -185,12 +195,12 @@ border: 2px solid white;
   border-radius: 30px;
 }
 .content_text{
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   margin-left: 10px;
   padding: 5px;
 }
 .search_text{
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   margin-left: 10px;
   padding: 5px;
 }
@@ -260,7 +270,7 @@ select{
   color: aliceblue;
   border-radius: 20px;
 }
-.search_icon{
+.search_button{
   position: relative;
   width: 30px;
   height: 30px;
@@ -268,7 +278,7 @@ select{
 .sliding_list_text{
   font-size: 18px;
 }
-.close {
+.close_button {
   width: 25px;
   height: 25px;
   background-color: rgb(171, 169, 169);
@@ -282,7 +292,7 @@ select{
   width: 160px;
   height: 60px;
   font-size: 20px;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   filter: drop-shadow(0 0 0.75rem rgb(194, 85, 233));
   border: #101010;
 }
