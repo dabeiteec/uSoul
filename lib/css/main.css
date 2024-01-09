@@ -240,12 +240,12 @@ label {
 .margin_search {
   margin: 0.4rem 0;
 }
-.search_bar{
-  max-width: 100%s;
-  min-width: 300px;
+/* .search_bar{
+  /* max-width: 100%;
+  min-width: 300px; 
   width:850px;
   background: rgba(40, 40, 40,0.2);
-}
+} */
 input{
   height: 60px;
   justify-content: center;
@@ -257,7 +257,9 @@ input{
   border-radius: 20px;
   position: relative;
   left: 20px;
-  bottom:5px
+  bottom:5px;
+  width:850px;
+  border: 2px solid gray;
 }
 select{
   width:170px ;
@@ -295,4 +297,9 @@ select{
   color: rgb(255, 255, 255);
   filter: drop-shadow(0 0 0.75rem rgb(194, 85, 233));
   border: #101010;
+}
+.button_border_choice_color{
+  border: 1px solid white;
+  padding: 2px;
+  filter: drop-shadow(0 0 0.2rem rgb(255, 255, 255));
 }
